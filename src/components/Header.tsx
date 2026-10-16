@@ -6,6 +6,7 @@ const navLinks = [
   { href: '#portfolio', label: 'Работы' },
   { href: '#about', label: 'О нас' },
   { href: '#contact', label: 'Контакты' },
+  { href: '#requisites', label: 'Реквизиты' },
 ];
 
 export default function Header() {

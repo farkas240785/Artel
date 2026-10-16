@@ -9,6 +9,7 @@ import Portfolio from './components/Portfolio';
 import Documents from './components/Documents';
 import CTA from './components/CTA';
 import Contact from './components/Contact';
+import Requisites from './components/Requisites';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
         <Documents />
         <CTA />
         <Contact />
+        <Requisites />
       </main>
       <Footer />
     </div>

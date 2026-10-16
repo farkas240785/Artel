@@ -85,8 +85,17 @@ export default function Contact() {
                 <p>ИП Солонец Виталий Васильевич</p>
                 <p>ИНН: 616619729113</p>
                 <p>ОГРНИП: 323237500412353</p>
-                <p>р/с в ООО «ОЗОН Банк»</p>
+                <p>р/с: 40802810200000076978</p>
+                <p>ООО "ОЗОН Банк"</p>
+                <p>БИК: 044525068</p>
+                <p>к/с: 30101810645374525068</p>
               </div>
+              <a
+                href="#requisites"
+                className="inline-block mt-3 text-sm text-patina hover:text-patina-dark font-medium transition-colors"
+              >
+                Все реквизиты →
+              </a>
             </div>
           </div>
 

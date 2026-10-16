@@ -43,6 +43,7 @@ export default function Footer() {
                 { href: '#portfolio', label: 'Работы' },
                 { href: '#documents', label: 'Документы' },
                 { href: '#contact', label: 'Контакты' },
+                { href: '#requisites', label: 'Реквизиты' },
               ].map((link) => (
                 <a
                   key={link.href}
@@ -98,9 +99,10 @@ export default function Footer() {
             <p className="text-xs text-white/40">
               © {currentYear} Артель «Исторический Облик». Все права защищены.
             </p>
-            <p className="text-xs text-white/40">
-              ИП Солонец В.В. | ИНН 616619729113 | ОГРНИП 323237500412353
-            </p>
+            <div className="text-xs text-white/40 space-y-1">
+              <p>ИП Солонец Виталий Васильевич | ИНН 616619729113 | ОГРНИП 323237500412353</p>
+              <p>р/с 40802810200000076978 | ООО "ОЗОН Банк" | БИК 044525068</p>
+            </div>
           </div>
         </div>
       </div>
