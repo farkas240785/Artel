@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone, Mail } from 'lucide-react';
 
 const navLinks = [
   { href: '#services', label: 'Услуги' },
@@ -22,10 +22,22 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm' : 'bg-transparent'
+        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm' : 'bg-gradient-to-b from-black/40 to-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      {/* Background Image - only visible when not scrolled */}
+      {!isScrolled && (
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img 
+            src="/images/header-bg.svg" 
+            alt="" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent" />
+        </div>
+      )}
+
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <a href="#" className="flex items-center gap-3">
             <div className="w-10 h-10 flex items-center justify-center">
@@ -38,10 +50,10 @@ export default function Header() {
               </svg>
             </div>
             <div className="hidden sm:block">
-              <div className="font-serif text-lg font-semibold text-graphite leading-none">
+              <div className={`font-serif text-lg font-semibold leading-none ${isScrolled ? 'text-graphite' : 'text-white'}`}>
                 Исторический Облик
               </div>
-              <div className="text-[10px] text-graphite-light tracking-[0.2em] uppercase mt-0.5">
+              <div className={`text-[10px] tracking-[0.2em] uppercase mt-0.5 ${isScrolled ? 'text-graphite-light' : 'text-white/70'}`}>
                 Реставрация
               </div>
             </div>
@@ -52,7 +64,9 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-graphite-light hover:text-patina transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  isScrolled ? 'text-graphite-light hover:text-patina' : 'text-white/90 hover:text-white'
+                }`}
               >
                 {link.label}
               </a>
@@ -67,7 +81,7 @@ export default function Header() {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-graphite"
+            className={`md:hidden p-2 ${isScrolled ? 'text-graphite' : 'text-white'}`}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
