@@ -1,8 +1,10 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
-import Principles from './components/Principles';
 import Services from './components/Services';
+import Process from './components/Process';
+import Gallery from './components/Gallery';
+import Stats from './components/Stats';
 import Portfolio from './components/Portfolio';
 import Documents from './components/Documents';
 import CTA from './components/CTA';
@@ -16,8 +18,10 @@ export default function App() {
       <main>
         <Hero />
         <About />
-        <Principles />
         <Services />
+        <Process />
+        <Gallery />
+        <Stats />
         <Portfolio />
         <Documents />
         <CTA />
