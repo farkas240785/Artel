@@ -49,7 +49,7 @@ export default function Requisites() {
                   ИП Солонец Виталий Васильевич
                 </h3>
                 <p className="text-white/70 text-sm">
-                  Артель «Исторический Облик»
+                  Артель реставрации и монтажа «Исторический Облик»
                 </p>
               </div>
             </div>
@@ -102,7 +102,7 @@ export default function Requisites() {
                 Бренд
               </div>
               <div className="font-serif text-lg font-bold text-graphite">
-                Артель «Исторический Облик»
+                Артель реставрации и монтажа «Исторический Облик»
               </div>
               <div className="text-sm text-graphite-light mt-1">
                 Торговое наименование

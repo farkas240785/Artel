@@ -16,9 +16,17 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        <div className="mb-8">
+        <div className="mb-6">
           <div className="inline-block px-5 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full">
             <span className="text-sm text-white/90 font-medium tracking-wide">
+              Артель реставрации и монтажа «Исторический Облик»
+            </span>
+          </div>
+        </div>
+        
+        <div className="mb-8">
+          <div className="inline-block px-4 py-1.5 bg-ochre/20 backdrop-blur-sm border border-ochre/30 rounded-full">
+            <span className="text-sm text-ochre-light font-medium tracking-wide">
               Лицензия Минкульта РФ
             </span>
           </div>

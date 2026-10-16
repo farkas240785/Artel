@@ -31,10 +31,10 @@ export default function About() {
             <h2 className="font-serif text-4xl sm:text-5xl font-bold text-graphite mb-6 leading-tight">
               Возвращаем подлинность
             </h2>
-            <p className="text-lg text-graphite-light leading-relaxed mb-8">
-              Специализируемся на реставрации деревянных окон, дверей и ворот 
-              на объектах культурного наследия. Работаем по ГОСТ и соблюдаем 
-              требования 73-ФЗ.
+            <p className="text-lg text-graphite-light leading-relaxed mb-4">
+              <span className="font-semibold text-graphite">Артель реставрации и монтажа «Исторический Облик»</span> специализируется 
+              на реставрации деревянных окон, дверей и ворот на объектах культурного наследия. 
+              Работаем по ГОСТ и соблюдаем требования 73-ФЗ.
             </p>
 
             {/* Stats */}

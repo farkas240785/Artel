@@ -19,15 +19,15 @@ export default function Footer() {
               </svg>
               <div>
                 <div className="font-serif text-lg font-semibold leading-none">
-                  Исторический Облик
+                  Артель реставрации и монтажа
                 </div>
                 <div className="text-xs text-white/60 tracking-wider uppercase mt-1">
-                  Реставрация
+                  «Исторический Облик»
                 </div>
               </div>
             </div>
             <p className="text-sm text-white/60 leading-relaxed">
-              Реставрация исторической столярки на объектах культурного наследия
+              Артель реставрации и монтажа «Исторический Облик». Реставрация исторической столярки на объектах культурного наследия.
             </p>
           </div>
 
@@ -97,7 +97,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
             <p className="text-xs text-white/40">
-              © {currentYear} Артель «Исторический Облик». Все права защищены.
+              © {currentYear} Артель реставрации и монтажа «Исторический Облик». Все права защищены.
             </p>
             <div className="text-xs text-white/40 space-y-1">
               <p>ИП Солонец Виталий Васильевич | ИНН 616619729113 | ОГРНИП 323237500412353</p>

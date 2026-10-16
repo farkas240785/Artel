@@ -51,10 +51,10 @@ export default function Header() {
             </div>
             <div className="hidden sm:block">
               <div className={`font-serif text-lg font-semibold leading-none ${isScrolled ? 'text-graphite' : 'text-white'}`}>
-                Исторический Облик
+                Артель реставрации и монтажа
               </div>
               <div className={`text-[10px] tracking-[0.2em] uppercase mt-0.5 ${isScrolled ? 'text-graphite-light' : 'text-white/70'}`}>
-                Реставрация
+                «Исторический Облик»
               </div>
             </div>
           </a>
