@@ -41,30 +41,42 @@ export default function Services() {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="group bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100"
+              className="group bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100"
             >
-              {/* Icon */}
-              <div className="w-16 h-16 flex items-center justify-center rounded-2xl bg-gradient-to-br from-patina to-patina-light mb-6 group-hover:scale-110 transition-transform duration-300">
-                <service.icon className="w-8 h-8 text-white" />
+              {/* Image */}
+              <div className="aspect-[4/3] bg-gradient-to-br from-patina/10 to-ochre/10 relative overflow-hidden">
+                <img 
+                  src="/images/workshop.jpg" 
+                  alt={service.title}
+                  className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                <div className="absolute bottom-4 left-4">
+                  <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-white/90 backdrop-blur-sm">
+                    <service.icon className="w-7 h-7 text-patina" />
+                  </div>
+                </div>
               </div>
 
               {/* Content */}
-              <h3 className="font-serif text-2xl font-bold text-graphite mb-3">
-                {service.title}
-              </h3>
-              <p className="text-graphite-light mb-6 leading-relaxed">
-                {service.description}
-              </p>
+              <div className="p-6">
+                <h3 className="font-serif text-2xl font-bold text-graphite mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-graphite-light mb-6 leading-relaxed">
+                  {service.description}
+                </p>
 
-              {/* Features */}
-              <ul className="space-y-2">
-                {service.features.map((feature, fIdx) => (
-                  <li key={fIdx} className="flex items-center gap-2 text-sm text-graphite-light">
-                    <div className="w-1.5 h-1.5 rounded-full bg-ochre flex-shrink-0" />
-                    {feature}
-                  </li>
-                ))}
-              </ul>
+                {/* Features */}
+                <ul className="space-y-2">
+                  {service.features.map((feature, fIdx) => (
+                    <li key={fIdx} className="flex items-center gap-2 text-sm text-graphite-light">
+                      <div className="w-1.5 h-1.5 rounded-full bg-ochre flex-shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>

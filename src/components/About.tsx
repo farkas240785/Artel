@@ -7,21 +7,12 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image Side */}
           <div className="relative">
-            <div className="aspect-[4/5] bg-gradient-to-br from-patina/20 to-ochre/20 rounded-2xl overflow-hidden relative">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <svg viewBox="0 0 400 500" className="w-3/4 h-3/4 opacity-30" fill="none">
-                  <rect x="50" y="50" width="300" height="400" rx="4" stroke="currentColor" strokeWidth="2" className="text-patina" />
-                  <rect x="70" y="70" width="110" height="150" rx="2" stroke="currentColor" strokeWidth="1.5" className="text-ochre" />
-                  <rect x="220" y="70" width="110" height="150" rx="2" stroke="currentColor" strokeWidth="1.5" className="text-ochre" />
-                  <rect x="70" y="250" width="110" height="150" rx="2" stroke="currentColor" strokeWidth="1.5" className="text-ochre" />
-                  <rect x="220" y="250" width="110" height="150" rx="2" stroke="currentColor" strokeWidth="1.5" className="text-ochre" />
-                  <line x1="125" y1="70" x2="125" y2="220" stroke="currentColor" strokeWidth="1" className="text-patina/60" />
-                  <line x1="70" y1="145" x2="180" y2="145" stroke="currentColor" strokeWidth="1" className="text-patina/60" />
-                  <line x1="275" y1="70" x2="275" y2="220" stroke="currentColor" strokeWidth="1" className="text-patina/60" />
-                  <line x1="220" y1="145" x2="330" y2="145" stroke="currentColor" strokeWidth="1" className="text-patina/60" />
-                </svg>
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-patina/40 to-transparent" />
+            <div className="aspect-[4/5] rounded-2xl overflow-hidden relative shadow-xl bg-gradient-to-br from-patina/10 to-ochre/10">
+              <img 
+                src="/images/window-illustration.svg" 
+                alt="Историческое деревянное окно" 
+                className="w-full h-full object-contain p-8"
+              />
             </div>
           </div>
 
