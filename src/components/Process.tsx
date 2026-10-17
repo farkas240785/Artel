@@ -43,10 +43,10 @@ export default function Process() {
         <div className="text-center mb-16">
           <div className="decorative-line mx-auto mb-6" />
           <h2 className="font-serif text-4xl sm:text-5xl font-bold text-graphite mb-4">
-            Как мы работаем
+            Этапы работы
           </h2>
           <p className="text-lg text-graphite-light max-w-2xl mx-auto">
-            Четыре этапа от первого осмотра до готового результата
+            Работы могут выполняться как комплексно, так и по отдельным этапам в зависимости от задач проекта
           </p>
         </div>
 

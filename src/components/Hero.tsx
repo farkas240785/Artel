@@ -39,7 +39,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-xl sm:text-2xl text-white/80 max-w-3xl mx-auto mb-12 font-light leading-relaxed">
-          Профессиональная реставрация окон, дверей и ворот на объектах культурного наследия Санкт-Петербурга
+          Профессиональные демонтажные, реставрационные и монтажные работы на объектах культурного наследия Санкт-Петербурга. Выполняем комплексные проекты и оказываем услуги на субподряде.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

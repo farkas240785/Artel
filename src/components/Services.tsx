@@ -18,8 +18,8 @@ const services = [
   {
     icon: ArrowUp,
     title: 'Монтажные работы',
-    description: 'Интеграция в проёмы с регулировкой притворов, обратимые материалы',
-    features: ['Точная интеграция в проёмы', 'Регулировка притворов', 'Обратимые материалы'],
+    description: 'Интеграция в проёмы с регулировкой притворов, обратимые материалы. Оказываем услуги столярным мастерским на субподряде.',
+    features: ['Точная интеграция в проёмы', 'Регулировка притворов', 'Обратимые материалы', 'Субподряд для мастерских'],
     image: 'https://image.qwenlm.ai/generated-images/246ff841-b554-4042-8302-a994f6fc8478/_result.png',
   },
 ];
@@ -32,10 +32,10 @@ export default function Services() {
         <div className="text-center mb-16">
           <div className="decorative-line mx-auto mb-6" />
           <h2 className="font-serif text-4xl sm:text-5xl font-bold text-graphite mb-4">
-            Технологический цикл
+            Направления работ
           </h2>
           <p className="text-lg text-graphite-light max-w-2xl mx-auto">
-            Полный цикл работ с историческими конструкциями
+            Выполняем работы как комплексно, так и по отдельным направлениям. Оказываем услуги монтажных работ столярным мастерским на субподряде.
           </p>
         </div>
 
