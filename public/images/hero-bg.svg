@@ -1,0 +1,121 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <pattern id="blueprint" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#2d5a3d" stroke-width="0.3" opacity="0.3"/>
+    </pattern>
+    <pattern id="grid" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M 12 0 L 0 0 0 12" fill="none" stroke="#c8962e" stroke-width="0.15" opacity="0.2"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#c8962e" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#2d5a3d" stop-opacity="0.02"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5f0e8" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#f5f0e8" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#f5f0e8" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Base -->
+  <rect width="1920" height="1080" fill="#f5f0e8"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+  
+  <!-- Blueprint grid -->
+  <rect width="1920" height="1080" fill="url(#blueprint)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  
+  <!-- Architectural elements - left building -->
+  <g transform="translate(100, 200)" opacity="0.12" stroke="#2d5a3d" fill="none" stroke-width="1.5">
+    <!-- Building facade -->
+    <rect x="0" y="0" width="300" height="600" rx="2"/>
+    <rect x="20" y="20" width="260" height="560" rx="1"/>
+    <!-- Windows row 1 -->
+    <rect x="40" y="60" width="80" height="120" rx="3"/>
+    <rect x="180" y="60" width="80" height="120" rx="3"/>
+    <path d="M40 60 Q80 30 120 60" stroke-width="1"/>
+    <path d="M180 60 Q220 30 260 60" stroke-width="1"/>
+    <!-- Window details -->
+    <line x1="80" y1="60" x2="80" y2="180"/>
+    <line x1="40" y1="120" x2="120" y2="120"/>
+    <line x1="220" y1="60" x2="220" y2="180"/>
+    <line x1="180" y1="120" x2="260" y2="120"/>
+    <!-- Windows row 2 -->
+    <rect x="40" y="240" width="80" height="120" rx="3"/>
+    <rect x="180" y="240" width="80" height="120" rx="3"/>
+    <line x1="80" y1="240" x2="80" y2="360"/>
+    <line x1="40" y1="300" x2="120" y2="300"/>
+    <line x1="220" y1="240" x2="220" y2="360"/>
+    <line x1="180" y1="300" x2="260" y2="300"/>
+    <!-- Windows row 3 -->
+    <rect x="40" y="420" width="80" height="120" rx="3"/>
+    <rect x="180" y="420" width="80" height="120" rx="3"/>
+    <line x1="80" y1="420" x2="80" y2="540"/>
+    <line x1="40" y1="480" x2="120" y2="480"/>
+    <line x1="220" y1="420" x2="220" y2="540"/>
+    <line x1="180" y1="480" x2="260" y2="480"/>
+    <!-- Cornice -->
+    <line x1="-10" y1="0" x2="310" y2="0" stroke-width="2"/>
+    <line x1="-10" y1="-8" x2="310" y2="-8"/>
+    <!-- Base -->
+    <line x1="-10" y1="600" x2="310" y2="600" stroke-width="2"/>
+  </g>
+  
+  <!-- Architectural elements - right building -->
+  <g transform="translate(1500, 150)" opacity="0.1" stroke="#c8962e" fill="none" stroke-width="1.2">
+    <rect x="0" y="0" width="280" height="650" rx="2"/>
+    <rect x="15" y="15" width="250" height="620" rx="1"/>
+    <!-- Arched windows -->
+    <rect x="30" y="80" width="70" height="100" rx="2"/>
+    <rect x="130" y="80" width="70" height="100" rx="2"/>
+    <path d="M30 80 Q65 50 100 80"/>
+    <path d="M130 80 Q165 50 200 80"/>
+    <!-- Details -->
+    <line x1="65" y1="80" x2="65" y2="180"/>
+    <line x1="30" y1="130" x2="100" y2="130"/>
+    <line x1="165" y1="80" x2="165" y2="180"/>
+    <line x1="130" y1="130" x2="200" y2="130"/>
+    <!-- Lower windows -->
+    <rect x="30" y="250" width="70" height="100" rx="2"/>
+    <rect x="130" y="250" width="70" height="100" rx="2"/>
+    <line x1="65" y1="250" x2="65" y2="350"/>
+    <line x1="30" y1="300" x2="100" y2="300"/>
+    <line x1="165" y1="250" x2="165" y2="350"/>
+    <line x1="130" y1="300" x2="200" y2="300"/>
+    <!-- Door -->
+    <rect x="80" y="450" width="70" height="150" rx="3"/>
+    <path d="M80 450 Q115 420 150 450"/>
+    <circle cx="140" cy="530" r="4"/>
+  </g>
+  
+  <!-- Center decorative element - ornamental window -->
+  <g transform="translate(860, 300)" opacity="0.06" stroke="#2d5a3d" fill="none" stroke-width="2">
+    <rect x="0" y="0" width="200" height="300" rx="4"/>
+    <rect x="10" y="10" width="180" height="280" rx="3"/>
+    <rect x="20" y="20" width="70" height="120" rx="2"/>
+    <rect x="110" y="20" width="70" height="120" rx="2"/>
+    <rect x="20" y="160" width="70" height="120" rx="2"/>
+    <rect x="110" y="160" width="70" height="120" rx="2"/>
+    <line x1="55" y1="20" x2="55" y2="140"/>
+    <line x1="20" y1="80" x2="90" y2="80"/>
+    <line x1="145" y1="20" x2="145" y2="140"/>
+    <line x1="110" y1="80" x2="180" y2="80"/>
+    <line x1="55" y1="160" x2="55" y2="280"/>
+    <line x1="20" y1="220" x2="90" y2="220"/>
+    <line x1="145" y1="160" x2="145" y2="280"/>
+    <line x1="110" y1="220" x2="180" y2="220"/>
+  </g>
+  
+  <!-- Dimension lines -->
+  <g opacity="0.08" stroke="#c8962e" fill="none" stroke-width="0.8">
+    <line x1="100" y1="850" x2="400" y2="850" stroke-dasharray="4 4"/>
+    <line x1="100" y1="845" x2="100" y2="855"/>
+    <line x1="400" y1="845" x2="400" y2="855"/>
+    <line x1="1500" y1="850" x2="1780" y2="850" stroke-dasharray="4 4"/>
+    <line x1="1500" y1="845" x2="1500" y2="855"/>
+    <line x1="1780" y1="845" x2="1780" y2="855"/>
+  </g>
+  
+  <!-- Fade overlay -->
+  <rect width="1920" height="1080" fill="url(#fade)"/>
+</svg>
