@@ -10,11 +10,13 @@ export default function Hero() {
           alt="Историческое здание Санкт-Петербурга"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-patina-dark/80 via-patina/70 to-graphite-dark/80" />
+        <div className="absolute inset-0 bg-gradient-to-br from-patina-dark/70 via-patina/60 to-graphite-dark/70" />
+        {/* Smooth fade to white at the bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-20">
         <div className="mb-6">
           <div className="inline-block px-5 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full">
             <span className="text-sm text-white/90 font-medium tracking-wide">
