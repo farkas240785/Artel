@@ -62,8 +62,9 @@ export default function Contact() {
                   <MapPin className="w-5 h-5 text-patina" />
                 </div>
                 <div>
-                  <div className="text-xs text-graphite-light uppercase tracking-wider mb-1">Адрес</div>
-                  <div className="text-lg font-semibold text-graphite">Санкт-Петербург</div>
+                  <div className="text-xs text-graphite-light uppercase tracking-wider mb-1">Адрес офиса</div>
+                  <div className="text-lg font-semibold text-graphite">г. Санкт-Петербург</div>
+                  <div className="text-sm text-graphite-light">пр-кт Лахтинский, д. 129А</div>
                 </div>
               </div>
 

@@ -83,9 +83,9 @@ export default function Footer() {
                 <Mail size={14} />
                 info@ist-oblik.ru
               </a>
-              <div className="flex items-center gap-2 text-sm text-white/60">
-                <MapPin size={14} />
-                Санкт-Петербург
+              <div className="flex items-start gap-2 text-sm text-white/60">
+                <MapPin size={14} className="mt-0.5 flex-shrink-0" />
+                <span>г. Санкт-Петербург,<br />пр-кт Лахтинский, д. 129А</span>
               </div>
             </div>
           </div>
