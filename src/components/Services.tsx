@@ -6,18 +6,21 @@ const services = [
     title: 'Демонтаж',
     description: 'Бережное извлечение, маркировка каждого элемента, фотофиксация утрат',
     features: ['Маркировка элементов', 'Фотофиксация', 'Документирование утрат'],
+    image: 'https://image.qwenlm.ai/generated-images/f212a628-9066-4854-aa35-d1bde33930cb/_result.png',
   },
   {
     icon: Wrench,
     title: 'Реставрация',
     description: 'Восполнение дефектов дублированием, подбор древесины, восстановление шип-паз',
     features: ['Дублирование утраченных частей', 'Подбор аналогичной древесины', 'Консервация подлинных фрагментов'],
+    image: 'https://image.qwenlm.ai/generated-images/b081e597-a2d6-4ff1-9d94-4430e486829c/_result.png',
   },
   {
     icon: ArrowUp,
     title: 'Монтаж',
     description: 'Интеграция в проёмы с регулировкой притворов, обратимые материалы',
     features: ['Точная интеграция в проёмы', 'Регулировка притворов', 'Обратимые материалы'],
+    image: 'https://image.qwenlm.ai/generated-images/246ff841-b554-4042-8302-a994f6fc8478/_result.png',
   },
 ];
 
@@ -41,18 +44,18 @@ export default function Services() {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="group bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100"
+              className="group bg-white rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100"
             >
               {/* Image */}
-              <div className="aspect-[4/3] bg-gradient-to-br from-patina/10 to-ochre/10 relative overflow-hidden">
+              <div className="aspect-[4/3] relative overflow-hidden">
                 <img 
-                  src="/images/workshop-illustration.svg" 
+                  src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                 <div className="absolute bottom-4 left-4">
-                  <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-white/90 backdrop-blur-sm">
+                  <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-white/95 backdrop-blur-sm shadow-lg">
                     <service.icon className="w-7 h-7 text-patina" />
                   </div>
                 </div>

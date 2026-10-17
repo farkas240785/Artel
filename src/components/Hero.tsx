@@ -3,15 +3,14 @@ import { ChevronDown } from 'lucide-react';
 export default function Hero() {
   return (
     <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
-      {/* Background with generated image */}
+      {/* Background Image */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-patina-dark/95 via-patina/85 to-graphite-dark/95" />
-        <div 
-          className="absolute inset-0 opacity-15"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 60 0 L 0 0 0 60' fill='none' stroke='%23ffffff' stroke-width='0.5'/%3E%3C/svg%3E")`,
-          }}
+        <img 
+          src="https://image.qwenlm.ai/generated-images/42cff70b-f39f-41b2-bc47-b329fbffa30b/_result.png"
+          alt="Историческое здание Санкт-Петербурга"
+          className="w-full h-full object-cover"
         />
+        <div className="absolute inset-0 bg-gradient-to-br from-patina-dark/80 via-patina/70 to-graphite-dark/80" />
       </div>
 
       {/* Content */}

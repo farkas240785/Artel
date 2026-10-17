@@ -7,7 +7,7 @@ const projects = [
     address: 'наб. реки Мойки, д. 16',
     year: '2024',
     category: 'Окна',
-    color: 'from-patina/20 to-ochre/20',
+    image: 'https://image.qwenlm.ai/generated-images/246ff841-b554-4042-8302-a994f6fc8478/_result.png',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const projects = [
     address: 'Литейный пр., д. 9',
     year: '2024',
     category: 'Двери',
-    color: 'from-ochre/20 to-patina/20',
+    image: 'https://image.qwenlm.ai/generated-images/2de8c5e8-7d6e-45eb-8ae5-07859e2786d2/_result.png',
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const projects = [
     address: 'ул. Рубинштейна, д. 5',
     year: '2023',
     category: 'Ворота',
-    color: 'from-patina-light/20 to-ochre-light/20',
+    image: 'https://image.qwenlm.ai/generated-images/d56a375c-7129-47ad-8ac8-4784b57ebdff/_result.png',
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const projects = [
     address: 'Казанская ул., д. 7',
     year: '2023',
     category: 'Комплекс',
-    color: 'from-ochre-dark/20 to-patina-dark/20',
+    image: 'https://image.qwenlm.ai/generated-images/d1aacb29-0f8c-416c-9c43-5f2214c2137c/_result.png',
   },
 ];
 
@@ -55,21 +55,17 @@ export default function Portfolio() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer"
+              className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300"
             >
-              {/* Background gradient */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${project.color}`} />
-              
-              {/* Pattern overlay */}
-              <div 
-                className="absolute inset-0 opacity-10"
-                style={{
-                  backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='20' height='20' fill='none' stroke='%232d5a3d' stroke-width='0.5'/%3E%3C/svg%3E")`,
-                }}
+              {/* Image */}
+              <img 
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
 
               {/* Content overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">

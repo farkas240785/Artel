@@ -51,7 +51,7 @@ export default function Process() {
         </div>
 
         {/* Steps */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {steps.map((step, idx) => (
             <div key={idx} className="relative">
               {/* Connector line */}
@@ -80,6 +80,15 @@ export default function Process() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Process Image */}
+        <div className="rounded-2xl overflow-hidden shadow-2xl">
+          <img 
+            src="https://image.qwenlm.ai/generated-images/b081e597-a2d6-4ff1-9d94-4430e486829c/_result.png"
+            alt="Процесс реставрации"
+            className="w-full h-80 object-cover"
+          />
         </div>
       </div>
     </section>

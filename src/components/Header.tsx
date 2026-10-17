@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const navLinks = [
   { href: '#services', label: 'Услуги' },
@@ -22,18 +22,18 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm' : 'bg-gradient-to-b from-black/40 to-transparent'
+        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm' : 'bg-transparent'
       }`}
     >
       {/* Background Image - only visible when not scrolled */}
       {!isScrolled && (
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <img 
-            src="/images/header-bg.svg" 
+            src="https://image.qwenlm.ai/generated-images/42cff70b-f39f-41b2-bc47-b329fbffa30b/_result.png"
             alt="" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-transparent" />
         </div>
       )}
 

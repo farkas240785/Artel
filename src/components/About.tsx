@@ -7,12 +7,21 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image Side */}
           <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden relative shadow-xl bg-gradient-to-br from-patina/10 to-ochre/10">
+            <div className="aspect-[4/5] rounded-2xl overflow-hidden relative shadow-2xl">
               <img 
-                src="/images/window-illustration.svg" 
-                alt="Историческое деревянное окно" 
-                className="w-full h-full object-contain p-8"
+                src="https://image.qwenlm.ai/generated-images/02e71511-c365-4bb4-9f2a-8927d96f4caa/_result.png"
+                alt="Реставратор за работой" 
+                className="w-full h-full object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6">
+                <p className="text-white font-serif text-xl font-semibold">
+                  Мастер-реставратор за работой
+                </p>
+                <p className="text-white/80 text-sm mt-1">
+                  Традиционные технологии восстановления
+                </p>
+              </div>
             </div>
           </div>
 
