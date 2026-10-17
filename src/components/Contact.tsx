@@ -91,12 +91,6 @@ export default function Contact() {
                 <p>БИК: 044525068</p>
                 <p>к/с: 30101810645374525068</p>
               </div>
-              <a
-                href="#requisites"
-                className="inline-block mt-3 text-sm text-patina hover:text-patina-dark font-medium transition-colors"
-              >
-                Все реквизиты →
-              </a>
             </div>
           </div>
 

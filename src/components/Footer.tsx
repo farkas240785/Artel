@@ -27,7 +27,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-white/60 leading-relaxed">
-              Артель реставрации и монтажа «Исторический Облик». Реставрация исторической столярки на объектах культурного наследия.
+              Артель реставрации и монтажа «Исторический Облик». Реставрация исторических конструкций на объектах культурного наследия.
             </p>
           </div>
 
@@ -43,7 +43,6 @@ export default function Footer() {
                 { href: '#portfolio', label: 'Работы' },
                 { href: '#documents', label: 'Документы' },
                 { href: '#contact', label: 'Контакты' },
-                { href: '#requisites', label: 'Реквизиты' },
               ].map((link) => (
                 <a
                   key={link.href}
@@ -62,10 +61,9 @@ export default function Footer() {
               Услуги
             </h4>
             <ul className="space-y-2 text-sm text-white/60">
-              <li>Демонтаж столярки</li>
-              <li>Реставрация окон</li>
-              <li>Восстановление дверей</li>
-              <li>Монтаж элементов</li>
+              <li>Демонтажные работы</li>
+              <li>Реставрационные работы</li>
+              <li>Монтажные работы</li>
             </ul>
           </div>
 

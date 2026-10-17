@@ -3,21 +3,21 @@ import { ArrowDown, Wrench, ArrowUp } from 'lucide-react';
 const services = [
   {
     icon: ArrowDown,
-    title: 'Демонтаж',
+    title: 'Демонтажные работы',
     description: 'Бережное извлечение, маркировка каждого элемента, фотофиксация утрат',
     features: ['Маркировка элементов', 'Фотофиксация', 'Документирование утрат'],
     image: 'https://image.qwenlm.ai/generated-images/f212a628-9066-4854-aa35-d1bde33930cb/_result.png',
   },
   {
     icon: Wrench,
-    title: 'Реставрация',
+    title: 'Реставрационные работы',
     description: 'Восполнение дефектов дублированием, подбор древесины, восстановление шип-паз',
     features: ['Дублирование утраченных частей', 'Подбор аналогичной древесины', 'Консервация подлинных фрагментов'],
     image: 'https://image.qwenlm.ai/generated-images/b081e597-a2d6-4ff1-9d94-4430e486829c/_result.png',
   },
   {
     icon: ArrowUp,
-    title: 'Монтаж',
+    title: 'Монтажные работы',
     description: 'Интеграция в проёмы с регулировкой притворов, обратимые материалы',
     features: ['Точная интеграция в проёмы', 'Регулировка притворов', 'Обратимые материалы'],
     image: 'https://image.qwenlm.ai/generated-images/246ff841-b554-4042-8302-a994f6fc8478/_result.png',
@@ -35,7 +35,7 @@ export default function Services() {
             Технологический цикл
           </h2>
           <p className="text-lg text-graphite-light max-w-2xl mx-auto">
-            Полный цикл работ с исторической столяркой
+            Полный цикл работ с историческими конструкциями
           </p>
         </div>
 
@@ -89,7 +89,7 @@ export default function Services() {
           <div className="inline-block bg-patina/5 border border-patina/20 rounded-xl px-8 py-5">
             <p className="text-graphite">
               <span className="font-semibold text-patina">Важно:</span> Не используем ПВХ, пластик или монтажную пену. 
-              Только аутентичные материалы.
+              Только аутентичные материалы и обратимые технологии.
             </p>
           </div>
         </div>
