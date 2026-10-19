@@ -11,7 +11,10 @@ export default function Hero() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-patina-dark/80 via-patina/70 to-graphite-dark/80" />
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
+        
+        {/* Multi-layer gradient for smooth transition */}
+        <div className="absolute bottom-0 left-0 right-0 h-[40%] bg-gradient-to-b from-transparent via-patina-dark/30 to-paper" />
+        <div className="absolute bottom-0 left-0 right-0 h-[25%] bg-gradient-to-t from-paper via-paper/80 to-transparent" />
       </div>
 
       {/* Content */}
