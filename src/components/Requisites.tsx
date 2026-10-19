@@ -25,6 +25,7 @@ export default function Requisites() {
   return (
     <section id="requisites" className="py-24 bg-paper">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        {/* Header */}
         <div className="text-center mb-16">
           <div className="decorative-line mx-auto mb-6" />
           <h2 className="font-serif text-4xl sm:text-5xl font-bold text-graphite mb-4">
@@ -35,8 +36,10 @@ export default function Requisites() {
           </p>
         </div>
 
+        {/* Requisites Card */}
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+            {/* Card Header */}
             <div className="bg-gradient-to-br from-patina to-patina-dark px-8 py-6 flex items-center gap-4">
               <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-white/10 backdrop-blur-sm">
                 <Building2 className="w-7 h-7 text-white" />
@@ -51,6 +54,7 @@ export default function Requisites() {
               </div>
             </div>
 
+            {/* Requisites List */}
             <div className="p-8">
               <div className="space-y-0 divide-y divide-gray-100">
                 {requisites.map((item, idx) => (
@@ -82,6 +86,7 @@ export default function Requisites() {
               </div>
             </div>
 
+            {/* Card Footer */}
             <div className="bg-paper border-t border-gray-100 px-8 py-5 flex items-center gap-3">
               <FileText size={16} className="text-ochre flex-shrink-0" />
               <p className="text-sm text-graphite-light">
@@ -90,6 +95,7 @@ export default function Requisites() {
             </div>
           </div>
 
+          {/* Additional info */}
           <div className="mt-8 grid sm:grid-cols-2 gap-4">
             <div className="bg-white rounded-xl p-5 border border-gray-100">
               <div className="text-xs uppercase tracking-wider text-graphite-light mb-2">

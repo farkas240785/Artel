@@ -24,6 +24,7 @@ const stats = [
 export default function Stats() {
   return (
     <section className="py-20 bg-gradient-to-br from-patina via-patina-dark to-graphite-dark relative overflow-hidden">
+      {/* Background pattern */}
       <div 
         className="absolute inset-0 opacity-5"
         style={{

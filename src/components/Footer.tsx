@@ -7,6 +7,7 @@ export default function Footer() {
     <footer className="bg-graphite-dark text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
               <svg viewBox="0 0 40 40" className="w-10 h-10" fill="none">
@@ -30,6 +31,7 @@ export default function Footer() {
             </p>
           </div>
 
+          {/* Navigation */}
           <div>
             <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">
               Навигация
@@ -54,6 +56,7 @@ export default function Footer() {
             </nav>
           </div>
 
+          {/* Services */}
           <div>
             <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">
               Услуги
@@ -66,6 +69,7 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Contacts */}
           <div>
             <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">
               Контакты
@@ -79,15 +83,16 @@ export default function Footer() {
                 <Mail size={14} />
                 info@ist-oblik.ru
               </a>
-              <div className="flex items-start gap-2 text-sm text-white/60">
-                <MapPin size={14} className="mt-0.5 flex-shrink-0" />
-                <span>г. Санкт-Петербург,<br />пр-кт Лахтинский, д. 129А,<br />помещение 27.1</span>
+              <div className="flex items-center gap-2 text-sm text-white/60">
+                <MapPin size={14} />
+                Санкт-Петербург
               </div>
             </div>
           </div>
         </div>
       </div>
 
+      {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">

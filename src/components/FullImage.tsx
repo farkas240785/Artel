@@ -2,7 +2,7 @@ export default function FullImage() {
   return (
     <section className="relative h-[60vh] min-h-[400px] overflow-hidden">
       <img 
-        src="https://image.qwenlm.ai/generated-images/d1aacb29-0f8c-416c-9c43-5f2214c2137c/_result.png"
+        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop"
         alt="Исторический двор Санкт-Петербурга"
         className="w-full h-full object-cover"
       />

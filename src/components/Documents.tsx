@@ -4,6 +4,7 @@ export default function Documents() {
   return (
     <section id="documents" className="py-24 bg-paper">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        {/* Header */}
         <div className="text-center mb-16">
           <div className="decorative-line mx-auto mb-6" />
           <h2 className="font-serif text-4xl sm:text-5xl font-bold text-graphite mb-4">
@@ -14,6 +15,7 @@ export default function Documents() {
           </p>
         </div>
 
+        {/* Documents Grid */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           <div className="bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-shadow border border-gray-100">
             <div className="w-16 h-16 mx-auto mb-5 flex items-center justify-center rounded-2xl bg-patina/10">
@@ -52,6 +54,7 @@ export default function Documents() {
           </div>
         </div>
 
+        {/* License highlight */}
         <div className="bg-gradient-to-br from-patina to-patina-dark rounded-2xl p-10 text-center text-white">
           <FileCheck className="w-12 h-12 mx-auto mb-4 text-ochre-light" />
           <h3 className="font-serif text-2xl font-bold mb-3">

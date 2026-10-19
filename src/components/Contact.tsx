@@ -22,6 +22,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        {/* Header */}
         <div className="text-center mb-16">
           <div className="decorative-line mx-auto mb-6" />
           <h2 className="font-serif text-4xl sm:text-5xl font-bold text-graphite mb-4">
@@ -33,6 +34,7 @@ export default function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
+          {/* Contact Info */}
           <div>
             <div className="space-y-6 mb-10">
               <a href="tel:+79001234567" className="flex items-center gap-4 p-4 bg-paper rounded-xl hover:shadow-md transition-shadow">
@@ -60,9 +62,8 @@ export default function Contact() {
                   <MapPin className="w-5 h-5 text-patina" />
                 </div>
                 <div>
-                  <div className="text-xs text-graphite-light uppercase tracking-wider mb-1">Адрес офиса</div>
-                  <div className="text-lg font-semibold text-graphite">г. Санкт-Петербург</div>
-                  <div className="text-sm text-graphite-light">пр-кт Лахтинский, д. 129А, помещение 27.1</div>
+                  <div className="text-xs text-graphite-light uppercase tracking-wider mb-1">Адрес</div>
+                  <div className="text-lg font-semibold text-graphite">Санкт-Петербург</div>
                 </div>
               </div>
 
@@ -77,6 +78,7 @@ export default function Contact() {
               </div>
             </div>
 
+            {/* Legal info */}
             <div className="bg-paper rounded-xl p-6">
               <h4 className="font-semibold text-graphite mb-3">Юридическая информация</h4>
               <div className="space-y-1 text-sm text-graphite-light">
@@ -97,6 +99,7 @@ export default function Contact() {
             </div>
           </div>
 
+          {/* Contact Form */}
           <div className="bg-paper rounded-2xl p-8">
             <h3 className="font-serif text-2xl font-bold text-graphite mb-6">
               Оставить заявку

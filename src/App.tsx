@@ -4,7 +4,6 @@ import About from './components/About';
 import Services from './components/Services';
 import Process from './components/Process';
 import Gallery from './components/Gallery';
-import FullImage from './components/FullImage';
 import Stats from './components/Stats';
 import Portfolio from './components/Portfolio';
 import Documents from './components/Documents';
@@ -23,7 +22,6 @@ export default function App() {
         <Services />
         <Process />
         <Gallery />
-        <FullImage />
         <Stats />
         <Portfolio />
         <Documents />
