@@ -59,20 +59,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto">
-          <div className="text-center">
-            <div className="font-serif text-3xl font-bold text-white mb-1">73-ФЗ</div>
-            <div className="text-sm text-white/60">Охрана памятников</div>
-          </div>
-          <div className="text-center">
-            <div className="font-serif text-3xl font-bold text-white mb-1">ГОСТ</div>
-            <div className="text-sm text-white/60">Р 55567</div>
-          </div>
-          <div className="text-center">
-            <div className="font-serif text-3xl font-bold text-white mb-1">Минкульт</div>
-            <div className="text-sm text-white/60">Лицензия РФ</div>
-          </div>
-        </div>
+
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
