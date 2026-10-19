@@ -3,19 +3,19 @@ import { ChevronDown } from 'lucide-react';
 export default function Hero() {
   return (
     <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
-      {/* Background with generated image */}
+      {/* Background Image */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-patina-dark/95 via-patina/85 to-graphite-dark/95" />
-        <div 
-          className="absolute inset-0 opacity-15"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 60 0 L 0 0 0 60' fill='none' stroke='%23ffffff' stroke-width='0.5'/%3E%3C/svg%3E")`,
-          }}
+        <img 
+          src="https://image.qwenlm.ai/generated-images/42cff70b-f39f-41b2-bc47-b329fbffa30b/_result.png"
+          alt="Историческое здание Санкт-Петербурга"
+          className="w-full h-full object-cover"
         />
+        <div className="absolute inset-0 bg-gradient-to-br from-patina-dark/80 via-patina/70 to-graphite-dark/80" />
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-20">
         <div className="mb-6">
           <div className="inline-block px-5 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full">
             <span className="text-sm text-white/90 font-medium tracking-wide">
@@ -38,7 +38,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-xl sm:text-2xl text-white/80 max-w-3xl mx-auto mb-12 font-light leading-relaxed">
-          Профессиональная реставрация окон, дверей и ворот на объектах культурного наследия Санкт-Петербурга
+          Профессиональные демонтажные, реставрационные и монтажные работы на объектах культурного наследия Санкт-Петербурга. Выполняем комплексные проекты и оказываем услуги на субподряде.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -56,7 +56,6 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Trust indicators */}
         <div className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto">
           <div className="text-center">
             <div className="font-serif text-3xl font-bold text-white mb-1">73-ФЗ</div>
@@ -73,7 +72,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <a href="#about" className="flex flex-col items-center text-white/60 hover:text-white transition-colors">
           <span className="text-xs uppercase tracking-wider mb-2">Листайте</span>

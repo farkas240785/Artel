@@ -7,12 +7,21 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image Side */}
           <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden relative shadow-xl bg-gradient-to-br from-patina/10 to-ochre/10">
+            <div className="aspect-[4/5] rounded-2xl overflow-hidden relative shadow-2xl">
               <img 
-                src="/images/window-illustration.svg" 
-                alt="Историческое деревянное окно" 
-                className="w-full h-full object-contain p-8"
+                src="https://image.qwenlm.ai/generated-images/02e71511-c365-4bb4-9f2a-8927d96f4caa/_result.png"
+                alt="Реставратор за работой" 
+                className="w-full h-full object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6">
+                <p className="text-white font-serif text-xl font-semibold">
+                  Мастер-реставратор за работой
+                </p>
+                <p className="text-white/80 text-sm mt-1">
+                  Традиционные технологии восстановления
+                </p>
+              </div>
             </div>
           </div>
 
@@ -24,11 +33,10 @@ export default function About() {
             </h2>
             <p className="text-lg text-graphite-light leading-relaxed mb-4">
               <span className="font-semibold text-graphite">Артель реставрации и монтажа «Исторический Облик»</span> специализируется 
-              на реставрации деревянных окон, дверей и ворот на объектах культурного наследия. 
-              Работаем по ГОСТ и соблюдаем требования 73-ФЗ.
+              на демонтажных, реставрационных и монтажных работах с историческими конструкциями на объектах культурного наследия. 
+              Выполняем комплексные проекты и оказываем услуги столярным мастерским на субподряде. Работаем по ГОСТ и соблюдаем требования 73-ФЗ.
             </p>
 
-            {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mb-10">
               <div>
                 <div className="font-serif text-4xl font-bold text-patina mb-1">73-ФЗ</div>
@@ -44,7 +52,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* Features */}
             <div className="space-y-4">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-patina/10 flex-shrink-0">
