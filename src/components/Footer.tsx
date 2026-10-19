@@ -27,7 +27,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-white/60 leading-relaxed">
-              Артель реставрации и монтажа «Исторический Облик». Реставрация исторической столярки на объектах культурного наследия.
+              Артель реставрации и монтажа «Исторический Облик». Демонтажные, реставрационные и монтажные работы на объектах культурного наследия. Оказываем услуги на субподряде.
             </p>
           </div>
 
@@ -41,7 +41,6 @@ export default function Footer() {
                 { href: '#about', label: 'О нас' },
                 { href: '#services', label: 'Услуги' },
                 { href: '#portfolio', label: 'Работы' },
-                { href: '#documents', label: 'Документы' },
                 { href: '#contact', label: 'Контакты' },
                 { href: '#requisites', label: 'Реквизиты' },
               ].map((link) => (
@@ -62,10 +61,9 @@ export default function Footer() {
               Услуги
             </h4>
             <ul className="space-y-2 text-sm text-white/60">
-              <li>Демонтаж столярки</li>
-              <li>Реставрация окон</li>
-              <li>Восстановление дверей</li>
-              <li>Монтаж элементов</li>
+              <li>Демонтажные работы</li>
+              <li>Реставрационные работы</li>
+              <li>Монтажные работы</li>
             </ul>
           </div>
 
@@ -75,17 +73,17 @@ export default function Footer() {
               Контакты
             </h4>
             <div className="space-y-3">
-              <a href="tel:+79001234567" className="flex items-center gap-2 text-sm text-white/60 hover:text-ochre transition-colors">
+              <a href="tel:+79603008797" className="flex items-center gap-2 text-sm text-white/60 hover:text-ochre transition-colors">
                 <Phone size={14} />
-                +7 (900) 123-45-67
+                +7 (960) 300-87-97
               </a>
               <a href="mailto:info@ist-oblik.ru" className="flex items-center gap-2 text-sm text-white/60 hover:text-ochre transition-colors">
                 <Mail size={14} />
                 info@ist-oblik.ru
               </a>
-              <div className="flex items-center gap-2 text-sm text-white/60">
-                <MapPin size={14} />
-                Санкт-Петербург
+              <div className="flex items-start gap-2 text-sm text-white/60">
+                <MapPin size={14} className="mt-0.5 flex-shrink-0" />
+                <span>г. Санкт-Петербург,<br />пр-кт Лахтинский, д. 129А,<br />помещение 27.1</span>
               </div>
             </div>
           </div>

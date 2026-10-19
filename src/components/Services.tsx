@@ -79,14 +79,7 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <div className="inline-block bg-patina/5 border border-patina/20 rounded-xl px-8 py-5">
-            <p className="text-graphite">
-              <span className="font-semibold text-patina">Важно:</span> Не используем ПВХ, пластик или монтажную пену. 
-              Только аутентичные материалы и обратимые технологии.
-            </p>
-          </div>
-        </div>
+
       </div>
     </section>
   );

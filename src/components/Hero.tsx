@@ -1,5 +1,3 @@
-import { ChevronDown } from 'lucide-react';
-
 export default function Hero() {
   return (
     <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
@@ -18,7 +16,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-20">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <div className="mb-6">
           <div className="inline-block px-5 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full">
             <span className="text-sm text-white/90 font-medium tracking-wide">
@@ -58,15 +56,6 @@ export default function Hero() {
             Смотреть работы
           </a>
         </div>
-
-
-      </div>
-
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <a href="#about" className="flex flex-col items-center text-white/60 hover:text-white transition-colors">
-          <span className="text-xs uppercase tracking-wider mb-2">Листайте</span>
-          <ChevronDown size={20} />
-        </a>
       </div>
     </section>
   );

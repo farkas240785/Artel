@@ -37,13 +37,13 @@ export default function Contact() {
           {/* Contact Info */}
           <div>
             <div className="space-y-6 mb-10">
-              <a href="tel:+79001234567" className="flex items-center gap-4 p-4 bg-paper rounded-xl hover:shadow-md transition-shadow">
+              <a href="tel:+79603008797" className="flex items-center gap-4 p-4 bg-paper rounded-xl hover:shadow-md transition-shadow">
                 <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-patina/10">
                   <Phone className="w-5 h-5 text-patina" />
                 </div>
                 <div>
                   <div className="text-xs text-graphite-light uppercase tracking-wider mb-1">Телефон</div>
-                  <div className="text-lg font-semibold text-graphite">+7 (900) 123-45-67</div>
+                  <div className="text-lg font-semibold text-graphite">+7 (960) 300-87-97</div>
                 </div>
               </a>
 
@@ -62,8 +62,9 @@ export default function Contact() {
                   <MapPin className="w-5 h-5 text-patina" />
                 </div>
                 <div>
-                  <div className="text-xs text-graphite-light uppercase tracking-wider mb-1">Адрес</div>
-                  <div className="text-lg font-semibold text-graphite">Санкт-Петербург</div>
+                  <div className="text-xs text-graphite-light uppercase tracking-wider mb-1">Адрес офиса</div>
+                  <div className="text-lg font-semibold text-graphite">г. Санкт-Петербург</div>
+                  <div className="text-sm text-graphite-light">пр-кт Лахтинский, д. 129А, помещение 27.1</div>
                 </div>
               </div>
 
