@@ -42,14 +42,14 @@ export default function Process() {
         <div className="text-center mb-16">
           <div className="decorative-line mx-auto mb-6" />
           <h2 className="font-serif text-4xl sm:text-5xl font-bold text-graphite mb-4">
-            Как мы работаем
+            Этапы работы
           </h2>
           <p className="text-lg text-graphite-light max-w-2xl mx-auto">
-            Четыре этапа от первого осмотра до готового результата
+            Работы могут выполняться как комплексно, так и по отдельным этапам в зависимости от задач проекта
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {steps.map((step, idx) => (
             <div key={idx} className="relative">
               {idx < steps.length - 1 && (
@@ -74,6 +74,15 @@ export default function Process() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Process Image */}
+        <div className="rounded-2xl overflow-hidden shadow-2xl">
+          <img 
+            src="https://image.qwenlm.ai/generated-images/b081e597-a2d6-4ff1-9d94-4430e486829c/_result.png"
+            alt="Процесс реставрации"
+            className="w-full h-80 object-cover"
+          />
         </div>
       </div>
     </section>
