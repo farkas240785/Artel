@@ -79,8 +79,8 @@ export default function Process() {
         {/* Process Image */}
         <div className="rounded-2xl overflow-hidden shadow-2xl">
           <img 
-            src="https://image.qwenlm.ai/generated-images/63c00d6e-4be0-4ed2-bc76-470bbcbf7815/_result.png"
-            alt="Монтаж отреставрированного окна"
+            src="https://image.qwenlm.ai/generated-images/f1b42c25-cf7d-45de-809b-4168f57dfd97/_result.png"
+            alt="Мастер работает отверткой"
             className="w-full h-80 object-cover"
           />
         </div>
