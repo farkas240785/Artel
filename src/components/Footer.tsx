@@ -4,39 +4,39 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-graphite-dark text-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <footer className="bg-midnight text-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <svg viewBox="0 0 40 40" className="w-10 h-10" fill="none">
-                <rect x="4" y="2" width="32" height="36" rx="1" stroke="currentColor" strokeWidth="1.5" className="text-ochre" />
+            <div className="flex items-center gap-4 mb-6">
+              <svg viewBox="0 0 40 40" className="w-12 h-12" fill="none">
+                <rect x="4" y="2" width="32" height="36" rx="1" stroke="currentColor" strokeWidth="1.5" className="text-gold" />
                 <rect x="8" y="6" width="10" height="12" rx="0.5" stroke="currentColor" strokeWidth="1" className="text-white/60" />
                 <rect x="22" y="6" width="10" height="12" rx="0.5" stroke="currentColor" strokeWidth="1" className="text-white/60" />
                 <rect x="8" y="22" width="10" height="12" rx="0.5" stroke="currentColor" strokeWidth="1" className="text-white/60" />
                 <rect x="22" y="22" width="10" height="12" rx="0.5" stroke="currentColor" strokeWidth="1" className="text-white/60" />
               </svg>
               <div>
-                <div className="font-serif text-lg font-semibold leading-none">
+                <div className="font-serif text-xl font-medium leading-tight">
                   Артель реставрации и монтажа
                 </div>
-                <div className="text-xs text-white/60 tracking-wider uppercase mt-1">
+                <div className="text-xs text-gold-light tracking-[0.2em] uppercase mt-1 font-light">
                   «Исторический Облик»
                 </div>
               </div>
             </div>
-            <p className="text-sm text-white/60 leading-relaxed">
+            <p className="text-sm text-white/60 leading-relaxed font-light">
               Артель реставрации и монтажа «Исторический Облик». Демонтажные, реставрационные и монтажные работы на объектах культурного наследия. Оказываем услуги на субподряде.
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">
+            <h4 className="font-serif text-lg font-medium mb-6 tracking-wide">
               Навигация
             </h4>
-            <nav className="space-y-2">
+            <nav className="space-y-3">
               {[
                 { href: '#about', label: 'О нас' },
                 { href: '#services', label: 'Услуги' },
@@ -47,7 +47,7 @@ export default function Footer() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="block text-sm text-white/60 hover:text-ochre transition-colors"
+                  className="block text-sm text-white/60 hover:text-gold transition-colors duration-300 font-light tracking-wide"
                 >
                   {link.label}
                 </a>
@@ -57,10 +57,10 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">
+            <h4 className="font-serif text-lg font-medium mb-6 tracking-wide">
               Услуги
             </h4>
-            <ul className="space-y-2 text-sm text-white/60">
+            <ul className="space-y-3 text-sm text-white/60 font-light tracking-wide">
               <li>Демонтажные работы</li>
               <li>Реставрационные работы</li>
               <li>Монтажные работы</li>
@@ -69,20 +69,20 @@ export default function Footer() {
 
           {/* Contacts */}
           <div>
-            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">
+            <h4 className="font-serif text-lg font-medium mb-6 tracking-wide">
               Контакты
             </h4>
-            <div className="space-y-3">
-              <a href="tel:+79603008797" className="flex items-center gap-2 text-sm text-white/60 hover:text-ochre transition-colors">
-                <Phone size={14} />
+            <div className="space-y-4">
+              <a href="tel:+79603008797" className="flex items-center gap-3 text-sm text-white/60 hover:text-gold transition-colors duration-300 font-light">
+                <Phone size={16} strokeWidth={1.5} />
                 +7 (960) 300-87-97
               </a>
-              <a href="mailto:info@ist-oblik.ru" className="flex items-center gap-2 text-sm text-white/60 hover:text-ochre transition-colors">
-                <Mail size={14} />
+              <a href="mailto:info@ist-oblik.ru" className="flex items-center gap-3 text-sm text-white/60 hover:text-gold transition-colors duration-300 font-light">
+                <Mail size={16} strokeWidth={1.5} />
                 info@ist-oblik.ru
               </a>
-              <div className="flex items-start gap-2 text-sm text-white/60">
-                <MapPin size={14} className="mt-0.5 flex-shrink-0" />
+              <div className="flex items-start gap-3 text-sm text-white/60 font-light">
+                <MapPin size={16} strokeWidth={1.5} className="mt-0.5 flex-shrink-0" />
                 <span>г. Санкт-Петербург,<br />пр-кт Лахтинский, д. 129А,<br />помещение 27.1</span>
               </div>
             </div>
@@ -91,13 +91,13 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-            <p className="text-xs text-white/40">
+      <div className="border-t border-gold/10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <p className="text-xs text-white/40 font-light tracking-wide">
               © {currentYear} Артель реставрации и монтажа «Исторический Облик». Все права защищены.
             </p>
-            <div className="text-xs text-white/40 space-y-1">
+            <div className="text-xs text-white/40 space-y-1 font-light tracking-wide">
               <p>ИП Солонец Виталий Васильевич | ИНН 616619729113 | ОГРНИП 323237500412353</p>
               <p>р/с 40802810200000076978 | ООО "ОЗОН Банк" | БИК 044525068</p>
             </div>

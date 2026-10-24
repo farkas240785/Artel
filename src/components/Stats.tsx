@@ -23,26 +23,26 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="py-20 bg-gradient-to-br from-patina via-patina-dark to-graphite-dark relative overflow-hidden">
-      {/* Background pattern */}
+    <section className="py-24 bg-midnight relative overflow-hidden">
+      {/* Subtle pattern overlay */}
       <div 
-        className="absolute inset-0 opacity-5"
+        className="absolute inset-0 opacity-[0.03]"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 100 0 L 0 0 0 100' fill='none' stroke='%23ffffff' stroke-width='0.5'/%3E%3C/svg%3E")`,
+          backgroundImage: `url("image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 100 0 L 0 0 0 100' fill='none' stroke='%23c9a961' stroke-width='0.5'/%3E%3C/svg%3E")`,
         }}
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
           {stats.map((stat, idx) => (
-            <div key={idx} className="text-center">
-              <div className="font-serif text-5xl sm:text-6xl font-bold text-white mb-2">
+            <div key={idx} className="text-center group">
+              <div className="font-serif text-6xl sm:text-7xl font-light text-gold mb-3 group-hover:text-gold-light transition-colors duration-300">
                 {stat.number}
               </div>
-              <div className="text-lg font-semibold text-ochre-light mb-1">
+              <div className="text-lg font-medium text-white mb-2 tracking-wide">
                 {stat.label}
               </div>
-              <div className="text-sm text-white/60">
+              <div className="text-sm text-white/50 font-light">
                 {stat.description}
               </div>
             </div>
