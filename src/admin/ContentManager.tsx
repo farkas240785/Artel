@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Save } from 'lucide-react';
 import { getContent, saveContent } from './storage';
+import ImageUploader from './ImageUploader';
 import type { SiteContent } from './types';
 
 export default function ContentManager() {
@@ -77,17 +78,13 @@ export default function ContentManager() {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-midnight mb-2">
-                URL фонового изображения
-              </label>
-              <input
-                type="text"
+              <ImageUploader
+                label="Фоновое изображение"
                 value={content.hero.backgroundImage}
-                onChange={(e) => setContent({
+                onChange={(dataUrl) => setContent({
                   ...content,
-                  hero: { ...content.hero, backgroundImage: e.target.value }
+                  hero: { ...content.hero, backgroundImage: dataUrl }
                 })}
-                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all"
               />
             </div>
           </div>
@@ -128,17 +125,13 @@ export default function ContentManager() {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-midnight mb-2">
-                URL изображения
-              </label>
-              <input
-                type="text"
+              <ImageUploader
+                label="Изображение"
                 value={content.about.image}
-                onChange={(e) => setContent({
+                onChange={(dataUrl) => setContent({
                   ...content,
-                  about: { ...content.about, image: e.target.value }
+                  about: { ...content.about, image: dataUrl }
                 })}
-                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all"
               />
             </div>
           </div>
@@ -215,19 +208,17 @@ export default function ContentManager() {
                     }}
                     className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all resize-none"
                   />
-                  <input
-                    type="text"
-                    placeholder="URL изображения"
+                  <ImageUploader
+                    label="Изображение услуги"
                     value={service.image}
-                    onChange={(e) => {
+                    onChange={(dataUrl) => {
                       const newItems = [...content.services.items];
-                      newItems[index] = { ...newItems[index], image: e.target.value };
+                      newItems[index] = { ...newItems[index], image: dataUrl };
                       setContent({
                         ...content,
                         services: { ...content.services, items: newItems }
                       });
                     }}
-                    className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all"
                   />
                 </div>
               </div>

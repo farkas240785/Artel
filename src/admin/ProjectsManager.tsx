@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Plus, Edit2, Trash2, X, Save, Image as ImageIcon } from 'lucide-react';
 import { getProjects, addProject, updateProject, deleteProject } from './storage';
+import ImageUploader from './ImageUploader';
 import type { Project } from './types';
 
 export default function ProjectsManager() {
@@ -249,34 +250,24 @@ function ProjectForm({ project, onSave, onClose }: ProjectFormProps) {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-midnight mb-2">
-              URL изображений "До" (через запятую)
-            </label>
-            <input
-              type="text"
-              value={formData.beforeImages.join(', ')}
-              onChange={(e) => setFormData({ 
+            <ImageUploader
+              label="Изображение 'До'"
+              value={formData.beforeImages[0] || ''}
+              onChange={(dataUrl) => setFormData({ 
                 ...formData, 
-                beforeImages: e.target.value.split(',').map(s => s.trim()).filter(s => s) 
+                beforeImages: dataUrl ? [dataUrl] : [] 
               })}
-              className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all"
-              placeholder="https://..."
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-midnight mb-2">
-              URL изображений "После" (через запятую)
-            </label>
-            <input
-              type="text"
-              value={formData.afterImages.join(', ')}
-              onChange={(e) => setFormData({ 
+            <ImageUploader
+              label="Изображение 'После'"
+              value={formData.afterImages[0] || ''}
+              onChange={(dataUrl) => setFormData({ 
                 ...formData, 
-                afterImages: e.target.value.split(',').map(s => s.trim()).filter(s => s) 
+                afterImages: dataUrl ? [dataUrl] : [] 
               })}
-              className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all"
-              placeholder="https://..."
             />
           </div>
 
