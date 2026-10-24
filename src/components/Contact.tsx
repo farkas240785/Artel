@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { addInquiry } from '../admin/storage';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -14,6 +15,15 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.consent) return;
+    
+    // Сохраняем заявку в localStorage
+    addInquiry({
+      name: formData.name,
+      phone: formData.phone,
+      email: formData.email,
+      message: formData.message,
+    });
+    
     setIsSubmitted(true);
     setTimeout(() => setIsSubmitted(false), 5000);
     setFormData({ name: '', phone: '', email: '', message: '', consent: false });

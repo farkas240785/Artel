@@ -1,5 +1,7 @@
 import { MapPin, Calendar, X, ChevronLeft, ChevronRight } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { getProjects } from '../admin/storage';
+import type { Project as AdminProject } from '../admin/types';
 
 interface Project {
   id: number;
@@ -12,7 +14,8 @@ interface Project {
   after: string[];
 }
 
-const projects: Project[] = [
+// Дефолтные проекты (используются если в localStorage нет проектов)
+const defaultProjects: Project[] = [
   {
     id: 1,
     title: 'Реставрация оконных заполнений',
@@ -80,9 +83,29 @@ const projects: Project[] = [
 ];
 
 export default function Portfolio() {
+  const [projects, setProjects] = useState<Project[]>(defaultProjects);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [activeTab, setActiveTab] = useState<'before' | 'after'>('before');
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Загрузка проектов из localStorage
+  useEffect(() => {
+    const adminProjects = getProjects();
+    if (adminProjects.length > 0) {
+      // Преобразуем AdminProject в Project формат
+      const convertedProjects: Project[] = adminProjects.map((p: AdminProject) => ({
+        id: parseInt(p.id),
+        title: p.title,
+        address: p.address,
+        year: p.year,
+        category: p.category,
+        description: p.description,
+        before: p.beforeImages,
+        after: p.afterImages,
+      }));
+      setProjects(convertedProjects);
+    }
+  }, []);
 
   const openProject = (project: Project) => {
     setSelectedProject(project);

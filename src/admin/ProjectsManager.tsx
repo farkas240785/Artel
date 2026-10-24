@@ -28,7 +28,7 @@ export default function ProjectsManager() {
     setShowForm(true);
   };
 
-  const handleSave = (projectData: any) => {
+  const handleSave = (projectData: Omit<Project, 'id' | 'createdAt' | 'updatedAt'>) => {
     if (editingProject) {
       updateProject(editingProject.id, projectData);
     } else {
@@ -137,7 +137,7 @@ export default function ProjectsManager() {
 
 interface ProjectFormProps {
   project: Project | null;
-  onSave: (data: any) => void;
+  onSave: (data: Omit<Project, 'id' | 'createdAt' | 'updatedAt'>) => void;
   onClose: () => void;
 }
 
