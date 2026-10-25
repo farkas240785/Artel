@@ -1,0 +1,53 @@
+<svg width="1920" height="600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d5a3d" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#c8962e" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="building" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3a3a3a" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0.6"/>
+    </linearGradient>
+    <pattern id="windows" width="120" height="150" patternUnits="userSpaceOnUse">
+      <rect x="10" y="10" width="100" height="130" fill="none" stroke="#2d5a3d" stroke-width="2" opacity="0.3"/>
+      <rect x="20" y="20" width="35" height="50" fill="none" stroke="#c8962e" stroke-width="1.5" opacity="0.4"/>
+      <rect x="65" y="20" width="35" height="50" fill="none" stroke="#c8962e" stroke-width="1.5" opacity="0.4"/>
+      <rect x="20" y="80" width="35" height="50" fill="none" stroke="#c8962e" stroke-width="1.5" opacity="0.4"/>
+      <rect x="65" y="80" width="35" height="50" fill="none" stroke="#c8962e" stroke-width="1.5" opacity="0.4"/>
+      <line x1="37" y1="20" x2="37" y2="70" stroke="#2d5a3d" stroke-width="0.8" opacity="0.3"/>
+      <line x1="20" y1="45" x2="55" y2="45" stroke="#2d5a3d" stroke-width="0.8" opacity="0.3"/>
+      <line x1="82" y1="20" x2="82" y2="70" stroke="#2d5a3d" stroke-width="0.8" opacity="0.3"/>
+      <line x1="65" y1="45" x2="100" y2="45" stroke="#2d5a3d" stroke-width="0.8" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Sky gradient -->
+  <rect width="1920" height="600" fill="url(#sky)"/>
+  
+  <!-- Building silhouettes -->
+  <rect x="0" y="100" width="600" height="500" fill="url(#building)" opacity="0.3"/>
+  <rect x="650" y="80" width="500" height="520" fill="url(#building)" opacity="0.25"/>
+  <rect x="1200" y="120" width="720" height="480" fill="url(#building)" opacity="0.3"/>
+  
+  <!-- Windows pattern -->
+  <rect width="1920" height="600" fill="url(#windows)" opacity="0.6"/>
+  
+  <!-- Decorative elements -->
+  <g opacity="0.15">
+    <!-- Cornice lines -->
+    <line x1="0" y1="100" x2="600" y2="100" stroke="#c8962e" stroke-width="3"/>
+    <line x1="650" y1="80" x2="1150" y2="80" stroke="#c8962e" stroke-width="3"/>
+    <line x1="1200" y1="120" x2="1920" y2="120" stroke="#c8962e" stroke-width="3"/>
+    
+    <!-- Arched windows -->
+    <path d="M 100 200 Q 150 150 200 200" stroke="#2d5a3d" stroke-width="2" fill="none"/>
+    <path d="M 300 200 Q 350 150 400 200" stroke="#2d5a3d" stroke-width="2" fill="none"/>
+    <path d="M 800 180 Q 850 130 900 180" stroke="#2d5a3d" stroke-width="2" fill="none"/>
+    <path d="M 1000 180 Q 1050 130 1100 180" stroke="#2d5a3d" stroke-width="2" fill="none"/>
+    <path d="M 1400 220 Q 1450 170 1500 220" stroke="#2d5a3d" stroke-width="2" fill="none"/>
+    <path d="M 1600 220 Q 1650 170 1700 220" stroke="#2d5a3d" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Overlay gradient for text readability -->
+  <rect width="1920" height="600" fill="url(#sky)" opacity="0.5"/>
+</svg>
